@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank-Kuh</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar" id="navbar">
+  <div class="logo">Bank-Kuh</div>
+
+  <button class="menu-toggle" id="menuToggle" aria-expanded="false">
+    <span class="hamburger"></span>
+  </button>
+
+  <nav>
+    <a href="#beranda">Beranda</a>
+    <a href="#tentang">Tentang Kami</a>
+    <a href="#layanan">Layanan</a>
+    <a href="#blog">Blog</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section id="beranda" class="hero">
+  <div class="hero-text">
+    <h1>Bank Digital Terdepan</h1>
+    <p>Mudah, cepat, aman untuk semua kebutuhan finansialmu.</p>
+    <button class="btn-primary">Mulai Sekarang</button>
+  </div>
+
+  <div class="hero-image">
+    <img src="img/Bank.png" alt="Bank Digital">
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="tentang" class="about">
+  <div class="about-image">
+    <img src="img/about.jpg" alt="Tentang Bank">
+  </div>
+  <div class="about-text">
+    <h2>Tentang Bank-Kuh</h2>
+    <p>
+      Bank-Kuh adalah bank digital modern yang menghadirkan kemudahan transaksi,
+      keamanan tinggi, dan layanan terbaik untuk semua.
+    </p>
+    <button class="btn-outline">Pelajari Lebih Lanjut</button>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="layanan" class="services">
+  <div class="services-text">
+    <h2>Layanan Unggulan</h2>
+    <p>Solusi keuangan yang cepat, aman, dan praktis.</p>
+  </div>
+
+  <div class="services-cards">
+    <div class="service-card">
+      <img src="img/service1.png" alt="Mobile Banking">
+      <p>Transaksi mudah lewat aplikasi mobile.</p>
+    </div>
+    <div class="service-card">
+      <img src="img/service2.jpg" alt="Tabungan">
+      <p>Tabungan dengan bunga kompetitif.</p>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section id="blog" class="blog">
+  <h2>Artikel Terbaru</h2>
+  <div class="blog-grid">
+    <div class="blog-card">
+      <img src="img/blog1.jpg">
+      <h3>Tips transaksi online yang aman</h3>
+    </div>
+    <div class="blog-card">
+      <img src="img/blog2.jpg">
+      <h3>Mengenal laporan keuangan bank</h3>
+    </div>
+    <div class="blog-card">
+      <img src="img/blog3.png">
+      <h3>Memilih kartu bank yang tepat</h3>
+    </div>
+  </div>
+</section>
+
+<!-- KONTAK -->
+<section id="kontak" class="visit">
+  <h2>Kontak Kami</h2>
+  <p>Jl. Kemangisan Raya No. 38, Jakarta</p>
+  <p>Senin–Sabtu | 08.00–17.00</p>
+  <p>Telp: (021) 555-0123</p>
+</section>
+
+</main>
+
+<script>
+const toggle = document.getElementById("menuToggle");
+const navbar = document.getElementById("navbar");
+
+toggle.addEventListener("click", () => {
+  navbar.classList.toggle("nav-open");
+});
+</script>
+
+</body>
+</html>
